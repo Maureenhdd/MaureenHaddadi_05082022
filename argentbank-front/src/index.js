@@ -8,7 +8,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Login from './pages/login/login';
+import Login from './pages/login/Login';
+import Index from './pages/index/Index';
+import User from './pages/User/User';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +19,11 @@ root.render(
     <React.StrictMode>
       {/* <ScrollToTop /> */}
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Index />} />
+        <Route path="/user" element={<User />} />
+
+
       </Routes>
     </React.StrictMode>
   </BrowserRouter>

@@ -1,10 +1,20 @@
+import Footer from '../../components/Footer/Footer'
+import LoginForm from '../../components/LoginForm/LoginForm'
 import Navbar from '../../components/Navbar/Navbar'
 import './login.scss'
 
 
 const Login = () => {
     return (
-        <Navbar />
+        <>
+            <Navbar />
+            <main className="main bg-dark">
+                <LoginForm />
+            </main>
+            <Footer />
+        </>
+
+
     )
 }
 
